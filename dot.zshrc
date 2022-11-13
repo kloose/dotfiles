@@ -33,6 +33,9 @@ export ENHANCD_COMMAND='c'
 # =============================================================================
 # Check if zplug is installed
 
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
 [ ! -d ~/.zplug ] && git clone https://github.com/zplug/zplug ~/.zplug
 source ~/.zplug/init.zsh
 
@@ -553,3 +556,9 @@ zplug load
 #ZLE_RPROMPT_INDENT=0
 
 # vim: ft=zsh
+
+
+# ZSH_THEME="robbyrussell"
+source $ZSH/oh-my-zsh.sh
+
+
